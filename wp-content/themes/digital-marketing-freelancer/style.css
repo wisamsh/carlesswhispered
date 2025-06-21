@@ -1,0 +1,306 @@
+/*
+Theme Name: Digital Marketing Freelancer
+Theme URI: https://www.themescarts.com/products/free-digital-marketing-wordpress-theme/
+Author: Themes Carts
+Author URI: https://www.themescarts.com/
+Description: The Digital Marketing Freelancer WordPress Theme is a sleek, high-performance theme designed for digital marketers, SEO specialists, and online marketing consultants. Whether you specialize in SEO, PPC, social media marketing, content creation, or influencer collaborations, this theme offers everything needed to build a professional online presence. Optimized for lead generation and conversion rate optimization, it features strategically placed call-to-action buttons (CTAs), landing page templates, and a mobile-friendly design to drive engagement. The theme is perfect for showcasing marketing services, case studies, portfolios, and blog content related to SEO strategies, paid media campaigns, Google Ads, Facebook Ads, and more. Built with clean, secure code and SEO best practices, it ensures fast-loading pages, schema markup integration, and Google-friendly site structure to improve search engine rankings. The theme supports email marketing automation, lead magnets, and CRM integrations to streamline customer acquisition and retention. Its modern, elegant design with interactive animations, social media integration, and video marketing support enhances brand visibility and credibility. Fully customizable with drag-and-drop builders, multiple layouts, and color schemes, it provides flexibility for freelancers and digital agencies. With optimized UX, A/B testing features, and analytics compatibility, this theme helps marketers track performance, improve engagement, and maximize ROI. Ideal for freelancers, consultants, and agencies, it’s the ultimate tool for building an authoritative digital marketing brand.
+Version: 1.6
+License: GNU General Public License version 2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: digital-marketing-freelancer
+Requires PHP: 5.6
+Tested up to: 6.8
+Tags: one-column, two-columns, left-sidebar, right-sidebar, block-styles, editor-style, full-site-editing, block-patterns, wide-blocks, custom-background, custom-colors, translation-ready, rtl-language-support, style-variations, news, portfolio, blog
+
+Digital Marketing Freelancer WordPress Theme has been created by ThemesCarts(themescarts.com), 2025.
+Digital Marketing Freelancer WordPress Theme is released under the terms of GNU GPL
+*/
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Inter", sans-serif !important;
+	font-weight: 100;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Poppins", sans-serif !important;
+	font-weight: 500;
+}
+
+/*
+ * Text and navigation link styles.
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.25ch;
+}
+
+a:hover,
+a:focus {
+	text-decoration-style: dashed;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.wp-block-navigation .wp-block-navigation-item a:hover,
+.wp-block-navigation .wp-block-navigation-item a:focus {
+	text-decoration: underline;
+	text-decoration-style: solid;
+}
+
+/*
+ * Search and File Block button styles.
+ * Necessary until the following issues are resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/36444
+ * https://github.com/WordPress/gutenberg/issues/27760
+ */
+
+.wp-block-search__button,
+.wp-block-file .wp-block-file__button {
+	background-color: var(--wp--preset--color--primary);
+	border-radius: 0;
+	border: none;
+	color: var(--wp--preset--color--foreground);
+	font-size: var(--wp--preset--font-size--medium);
+	padding: calc(.667em + 2px) calc(1.333em + 2px);
+}
+
+body.home .wp-site-blocks > * + *{
+	margin-block-start:0 !important;
+}
+body.home .services-section-01 .is-layout-flex, 
+body.home .services-section-02 .is-layout-flex{ 
+	gap:0 !important;
+}
+
+/* body footer.wp-block-template-part .is-layout-flex{ 
+	gap:0 !important;
+} */
+
+/*
+ * Button hover styles.
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+.wp-block-search__button:hover,
+.wp-block-file .wp-block-file__button:hover,
+.wp-block-button__link:hover {
+	opacity: 0.90;
+}
+
+.wp-block-button__link{
+	font-weight: normal !important;
+}
+
+/*
+ * Alignment styles.
+ * These rules are temporary, and should not be relied on or
+ * modified too heavily by themes or plugins that build on
+ * Twenty Twenty-Two. These are meant to be a precursor to
+ * a global solution provided by the Block Editor.
+ *
+ * Relevant issues:
+ * https://github.com/WordPress/gutenberg/issues/35607
+ * https://github.com/WordPress/gutenberg/issues/35884
+ */
+
+.wp-site-blocks,
+body > .is-root-container,
+.edit-post-visual-editor__post-title-wrapper,
+.wp-block-group.alignfull,
+.wp-block-group.has-background,
+.wp-block-cover.alignfull,
+.is-root-container .wp-block[data-align="full"] > .wp-block-group,
+.is-root-container .wp-block[data-align="full"] > .wp-block-cover {
+	padding-left: var(--wp--custom--spacing--outer);
+	padding-right: var(--wp--custom--spacing--outer);
+}
+
+.wp-site-blocks .alignfull,
+.wp-site-blocks > .wp-block-group.has-background,
+.wp-site-blocks > .wp-block-cover,
+.wp-site-blocks > .wp-block-template-part > .wp-block-group.has-background,
+.wp-site-blocks > .wp-block-template-part > .wp-block-cover,
+body > .is-root-container > .wp-block-cover,
+body > .is-root-container > .wp-block-template-part > .wp-block-group.has-background,
+body > .is-root-container > .wp-block-template-part > .wp-block-cover,
+.is-root-container .wp-block[data-align="full"] {
+	margin-left: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+	margin-right: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+	width: unset;
+}
+
+body.home .wp-block-cover{ margin-block-start:0 !important; }
+nav.Hdr-menu.wp-block-navigation ul{ font-weight:600 !important;}
+
+
+/* Blocks inside columns don't have negative margins. */
+.wp-site-blocks .wp-block-columns .wp-block-column .alignfull,
+.is-root-container .wp-block-columns .wp-block-column .wp-block[data-align="full"],
+/* We also want to avoid stacking negative margins. */
+.wp-site-blocks .alignfull:not(.wp-block-group) .alignfull,
+.is-root-container .wp-block[data-align="full"] > *:not(.wp-block-group) .wp-block[data-align="full"] {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: inherit;
+}
+.headright-part{ text-align:right;}
+body.home header.wp-block-template-part{ position: relative; width:100%; z-index:999;}
+/*
+ * Responsive menu container padding.
+ * This ensures the responsive container inherits the same
+ * spacing defined above. This behavior may be built into
+ * the Block Editor in the future.
+ */
+
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding-top: var(--wp--custom--spacing--outer);
+	padding-bottom: var(--wp--custom--spacing--large);
+	padding-right: var(--wp--custom--spacing--outer);
+	padding-left: var(--wp--custom--spacing--outer);
+}
+.wp-block-navigation ul li.current-menu-item > a,
+.wp-block-navigation ul li a:hover{ color:var(--wp--preset--color--extra-secondary) !important;}
+
+/* = Contact Form 7 CSS
+----------------------------------------------- */
+.wpcf7{ 
+	margin:30px 0 0;
+	padding:0;
+}
+.wpcf7 input[type="text"], 
+.wpcf7 input[type="tel"], 
+.wpcf7 input[type="email"]{ 
+	width:40%;
+	border:1px solid #cccccc;
+	box-shadow:inset 1px 1px 2px #ccc;
+	color:#797979;
+	margin-bottom:0;
+	height:40px;
+	padding:0 15px;
+}
+.wpcf7 textarea{	
+	border:1px solid #cccccc;
+	box-shadow:inset 1px 1px 2px #ccc;
+	color:#797979;
+	margin-bottom:25px;
+	padding:10px;
+	width:60%;
+	height:160px;
+	font-size:12px;
+}
+.wpcf7 input[type="submit"]{
+	background-color:#efc62c;
+	padding:20px 40px;
+	border-radius:40px;
+	font-weight:600;
+	font-size:16px;
+	cursor:pointer;
+	color:#ffffff;	
+	width:auto;
+	border:none;
+	text-transform:uppercase;
+}
+.wpcf7 input[type="submit"]:hover{
+	background-color:#101010;
+}
+.about-LeftBX{ position:relative !important;}
+.about-BlueBX{ position: absolute !important; bottom:0%; right:18%; 
+	-webkit-border-top-left-radius: 40px;
+	-webkit-border-bottom-right-radius: 40px;
+	-moz-border-radius-topleft: 40px;
+	-moz-border-radius-bottomright: 40px;
+	border-top-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+.yellow-CircleBx{ width:80px !important; height:80px !important; text-align:center;}
+
+.top-fourbx{box-shadow: 0 0px 20px 0 rgb(0 0 0 / 10%); border-radius:10px; margin:0 1% !important; border:1px solid transparent;}
+.top-fourbx:hover{border:1px solid #007cf9;}
+.fourbx-thumb{ width:100px; height:100px; line-height:80px; overflow:hidden; text-align:center; margin:0 auto; background-color:#f4f6f9; border-radius:100%; padding:10px;}
+
+.header-wrap .wp-block-search__button {
+    background: transparent;
+    color: #fff;
+}
+
+.header-wrap img {
+    width: fit-content !important;
+}
+
+.header-wrap {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+}
+
+.top-header {
+    background: transparent !important;
+}
+
+.banner-right-image img {
+	margin-bottom: -100px;
+}
+
+
+.post-page-area .wp-block-post{
+	padding: 30px;
+	box-shadow: 12px 12px 50px rgba(0, 0, 0, 0.4);
+	margin-bottom: 30px;
+}
+
+.sidebar-area-wrap .taxonomy-post_tag a {
+    background: var(--wp--preset--color--extra-secondary);
+    padding: 5px !important;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #fff !important;
+    margin-right: 10px;
+}
+.sidebar-area-wrap .taxonomy-post_tag span{
+	display: none;
+}
+
+.read-more-btn a.wp-block-post-excerpt__more-link {
+    background: var(--wp--preset--color--extra-secondary);
+    border-color: currentColor;
+    color: var(--wp--preset--color--white);
+    font-weight: 700;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+}
+
+@media (max-width: 1100px) {
+	.post-page-area .wp-block-columns.is-layout-flex.wp-block-columns-is-layout-flex {
+		max-width: 100% !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+}
+
+@media (max-width: 990px) {
+	.post-page-area .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column {
+		padding-right: 0 !important;
+	}
+}
+
+.woocommerce-account .wp-block-post-title, .woocommerce-account main .woocommerce, .woocommerce-cart .wp-block-post-title, .woocommerce-cart main .woocommerce, .woocommerce-checkout .wp-block-post-title, .woocommerce-checkout main .woocommerce {
+    max-width: 100%;
+}
+
+pre {
+    background: #eee;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6em;
+}

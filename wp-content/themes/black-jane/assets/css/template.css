@@ -1,0 +1,293 @@
+#slick_wrapper {
+    margin-bottom: 50px;
+}
+
+body,
+p, 
+li, 
+address, 
+dd, 
+blockquote, 
+td, 
+th,
+.textwidget,
+a.post-edit-link,
+.button,
+#footer a,
+#footer p,
+#footer li,
+#footer address,
+#footer dd,
+#footer blockquote,
+#footer td,
+#footer th,
+#footer .textwidget, 
+#sidebar p,
+#sidebar li,
+#sidebar address,
+#sidebar dd,
+#sidebar blockquote,
+#sidebar td,
+#sidebar th,
+#sidebar .textwidget,
+#logo a span,
+.suevafree-menu ul li a,
+.suevafree-menu ul ul li a,
+.comment-author .author,
+h3#reply-title small, .logged-in-as,
+.contact-form input[type=text], .contact-form textarea,
+.contact-form input[type=submit],
+.post-article blockquote p,
+.entry-tags,
+.entry-info,
+#footer ul.widget-category li,
+#wp-calendar th, 
+#wp-calendar 
+#today, 
+#wp-calendar 
+#today a,
+#wp-calendar caption,
+#sidebar .tagcloud a, 
+#footer .tagcloud a,
+.select-menu,
+.article-header,
+.comment-container,
+.wp-pagenavi a, 
+.wp-pagenavi a:link,
+.wp-pagenavi span.current,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1.title,
+h2.title,
+h3.title,
+h4.title,
+h5.title,
+h6.title,
+h1.title a,
+h2.title a,
+h3.title a,
+h4.title a,
+h5.title a,
+h6.title a,
+h3#reply-title, 
+h3.comments { 
+	font-family:'Mukta Vaani', sans-serif; 
+}
+
+#logo a.logo { 
+	font-family:'Courgette',Verdana, Geneva, sans-serif; 
+}
+
+#footer .copyright p {
+    font-size: 15px;
+}
+
+/* ===============================================
+   BIOGRAPHY WIDGET
+   ============================================= */
+ 
+.sneak_sidebar .widget_svevapro_biography_widget {
+	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+body.minimal_layout .widget_svevapro_biography_widget,
+body.disable_box_shadow .widget_svevapro_biography_widget,
+body.disable_box_shadow .sneak_sidebar .widget_svevapro_biography_widget {
+	box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+body.minimal_layout .widget_svevapro_biography_widget {
+	border: solid 1px #ddd;
+}
+
+.auth-container {
+	background:#fff;
+}
+
+.auth-cover {
+	width:100%;
+	height:100%;
+	display:block;
+	position:relative;
+	text-align:center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-color:#ddd;
+}
+
+.auth-thumb {
+	padding:0;
+	margin:-45px auto 0 auto;
+	z-index:999;
+	position:relative;
+	-moz-border-radius: 90em; 
+	-webkit-border-radius: 90em;  
+	border-radius: 90em;
+	overflow:hidden; 
+}
+
+.auth-info {
+	text-align:center;
+	padding:35px;
+}
+
+.auth-info p {
+	color:#616161 !important;
+	margin:0
+}
+
+.auth-info h3.title ,
+.no-padding .auth-info h3.title {
+	text-align:center !important;
+	color:#616161;
+	display:block;
+	visibility:visible;
+	margin-bottom:35px
+}
+
+/* ===============================================
+   SLICK SLIDESHOW
+   =============================================== */
+
+.slick-jane-slideshow {
+	color:#fff; 
+	overflow:hidden;
+}
+
+.slick-jane-slideshow .slick-article {
+	margin:0 10px;
+	padding:0;
+	position:relative;
+	text-align:center;
+}
+
+.slick-jane-slideshow .slick-slides .slick-article {
+	opacity: 0.8; 
+	filter: alpha(opacity=80);
+	transition:all 300ms ease;
+}
+
+.slick-jane-slideshow .slick-article img {
+	width:100%;
+	filter: gray; 
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+}
+
+.slick-jane-slideshow a.read-more span.button {
+    color: #fff;
+}
+
+.slick-jane-slideshow .slick-active .slick-article img ,
+.slick-jane-slideshow .slick-current .slick-article img {
+	filter: none;
+	-webkit-filter: grayscale(0);
+}
+
+.slick-jane-slideshow .slick-arrow {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    margin-top: -20px;
+    background: #fff;
+	color: #616161;
+    font-size: 14px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-transition-property: color, background;
+    transition-property: color, background;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	-o-transition:all .3s ease;
+	transition:all .3s ease;
+	opacity: 0; 
+	filter: alpha(opacity=0);
+	cursor:pointer
+}
+
+.slick-jane-slideshow .prev-arrow {
+	left: 80px;
+}
+
+.slick-jane-slideshow .next-arrow {
+	right: 80px;
+}
+
+.slick-jane-slideshow .slick-arrow:hover ,
+.slick-jane-slideshow .slick-arrow:active ,
+.slick-jane-slideshow .slick-arrow:focus {
+	color: #fff;
+	background-color:#d14a2b;
+}
+
+.slick-jane-slideshow .slider-overlay {
+	position:absolute;
+	bottom: 50px;
+	padding: 25px;
+	text-align: center;
+	background:#ffffff;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	-o-transition:all .3s ease;
+	transition:all .3s ease;
+	opacity: 0; 
+	filter: alpha(opacity=0);
+	width:50%;
+	margin-left:-25%;
+	left:50%;
+}
+
+.slick-jane-slideshow:hover .slick-arrow ,
+.slick-jane-slideshow .slick-current .slider-overlay {
+	opacity: 1.0; 
+	filter: alpha(opacity=100);
+}
+
+.slick-jane-slideshow .slider-overlay .title {
+	padding:15px 0;
+	line-height:1.1em;
+}
+
+.slick-jane-slideshow .slider-overlay .title a {
+	line-height:1.1em;
+}
+
+.slick-jane-slideshow .slider-overlay .title ,
+.slick-jane-slideshow .slider-overlay .entry-date {
+	margin:0 !important;
+	color:#616161;
+	display:block;
+	visibility:visible;
+}
+
+/* ===============================================
+   BLOCKQUOTE
+   ============================================= */
+ 
+.post-article blockquote {
+	border-left-style:solid;
+	border-left-width:4px;
+    border-left-color:#ddd !important;
+	background:#fafafa;
+	margin:40px 0;
+	padding:40px;
+	font-style:italic
+}
+
+.post-article blockquote p {
+	margin:0
+}

@@ -1,0 +1,4 @@
+[19-Jun-2025 12:42:30 UTC] PHP Warning:  Undefined array key "statusDetailsMessage" in /home/z2j0d0lgldkb/public_html/wp-content/plugins/wp-letsencrypt-ssl/classes/le-trait.php on line 859
+[19-Jun-2025 19:46:36 UTC] PHP Warning:  Undefined array key "endpoints" in /home/z2j0d0lgldkb/public_html/wp-content/plugins/wp-letsencrypt-ssl/classes/le-trait.php on line 859
+[19-Jun-2025 19:46:36 UTC] PHP Warning:  Trying to access array offset on null in /home/z2j0d0lgldkb/public_html/wp-content/plugins/wp-letsencrypt-ssl/classes/le-trait.php on line 859
+[19-Jun-2025 19:46:36 UTC] PHP Warning:  Trying to access array offset on null in /home/z2j0d0lgldkb/public_html/wp-content/plugins/wp-letsencrypt-ssl/classes/le-trait.php on line 859
