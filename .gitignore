@@ -1,4 +1,4 @@
 /.htaccess
 /wp-config.php
-/wp-admin
-/public_html
+/wp-admin/
+/public_html/
